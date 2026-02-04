@@ -1,0 +1,71 @@
+
+
+
+### user-api requests
+GET http://localhost:4000/user-api/users
+
+###
+GET http://localhost:4000/user-api/users/697dc2766930fce7bac05a80
+
+### 
+POST http://localhost:4000/user-api/users
+Content-Type: application/json
+
+{
+    "username":"harsh",
+    "password":"harsh",
+    "age":20
+
+}
+
+###
+PUT http://localhost:4000/user-api/users/697dc2766930fce7bac05a80
+Content-Type: application/json
+
+{
+    "username":"harsh",
+    "password":"harsh",
+    "age":22
+}
+
+###
+DELETE  http://localhost:4000/user-api/users/697dc2766930fce7bac05a80
+
+#####----------------------------------------------
+### product-api requests
+
+
+GET http://localhost:4000/product-api/products
+
+###
+POST  http://localhost:4000/product-api/products
+Content-Type: application/json
+
+{
+    "pid":10,
+    "productname":"chips",
+    "price":20
+}
+###
+GET http://localhost:4000/product-api/products/697dcd364a3e022b853a0145
+###
+PUT  http://localhost:4000/product-api/products/697dcd364a3e022b853a0145
+Content-Type: application/json
+
+{
+    "pid":10,
+    "productname":"chips",
+    "price":50
+
+}
+### user authentiaction (login) req
+POST  http://localhost:4000/user-api/auth
+Content-Type: application/json
+
+{
+    "username":"harsh",
+    "password":"harsh"
+
+}
+###
+GET   http://localhost:4000/user-api/test
